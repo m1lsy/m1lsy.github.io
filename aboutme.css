@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 400px;
+    }
+  
+    .col-1 h1,
+    .col-1 h2 {
+      font-size: 80px;
+    }
+  
+    h3 {
+      font-size: 30px;
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .info2 {
+      font-size: 25px;
+      width: 100%;
+    }
+  
+    .skillbars h3 {
+      font-size: 20px;
+    }
+  
+    .skill-box p {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    /* Styles for screens up to 1024px wide */
+    .col-1 h1,
+    .col-1 h2 {
+      font-size: 120px;
+    }
+  
+    h3 {
+      font-size: 40px;
+    }
+  
+    .info2 {
+      font-size: 30px;
+    }
+  
+    .skillbars h3 {
+      font-size: 25px;
+    }
+  
+    .skill-box p {
+      font-size: 20px;
+    }
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  body {
+    background-color: rgba(245, 99, 52, 255);
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 17, 255, 0);
+    font-size: 900%;
+    background-image: url("Web_Photo_Editor.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    float: left;
+    transform: translateY(-100px)
+  }
+  
+  .col-1 h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 17, 255, 0);
+    font-size: 900%;
+    background-image: url("Web_Photo_Editor.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: flex;
+    text-align: center;
+    float: left;
+    transform: translateY(-100px)
+  }
+  
+  h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(50, 59, 99);
+    width: 60%;
+    font-size: 350%;
+    font-weight: 800;
+    position: flex;
+    transform: translateY(-250px);
+    margin-left: 5%;
+  }
+  
+  .container {
+    width: 600px;
+    display: block;
+    justify-content: center;
+    transform: translateY(-60px);
+    position: flex;
+    max-width: 100%;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: fit-content;
+    position: flex;
+  }
+  
+  .swiper-slide {
+    object-fit: contain;
+    position: flex;
+  }
+  
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    color: #ffffff;
+    position: flex;
+  }
+  
+  .swiper .swiper-pagination-bullet-active {
+    background: #ffffff;
+    position: flex;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+    position: flex;
+  }
+  
+  .home img {
+    width: 8%;
+    height: 8%;
+    position: flex;
+  }
+  
+  .info2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(50, 59, 99);
+    width: 800px;
+    font-size: 40px;
+    position: flex;
+    float: right;
+    transform: translateY(-100px);
+  }
+  
