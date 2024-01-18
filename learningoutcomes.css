@@ -47,6 +47,61 @@ body{
   text-align: center;
 }
 /*) Future Orientated Organisation (*/
+.futuretext {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  background-image: url(Web_Photo_Editor.jpg);
+  height: 700px;
+  width: 1400px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;  
+}
+.ftext1 {
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 610px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+  font-size: 20px;
+
+}
+.ftext2 h3 {
+  font-size: 22px;
+  text-decoration: underline;
+}
+.ftext2 {
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 610px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 150px;
+  font-size: 20px;
+  
+}
+.ftext3 {
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 610px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px;
+  font-size: 20px;
+}
 .futoriorg {
     height: 700px;
     width: 1400px;
@@ -54,6 +109,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    transform: translateY(100px);
+
 }
 
 h3 {
@@ -170,25 +227,60 @@ h6 {
         }
       }
     
-.perlea {
-    height: 600px;
-    width: 1400px;
-    border-radius: 16px;
-    background-color: #212e6e ;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow:   0 0 15px #ff680a;
-    transform: translateY(800px);
-    } 
-
 .perleatext {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ff680a;
-    transform: translateY(60px);
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 27px;
-    }
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  background-image: url(Web_Photo_Editor.jpg);
+  height: 700px;
+  width: 1400px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  transform: translateY(150px);
+  } 
+
+  .ptext1 {
+    background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 610px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 60px;
+  font-size: 20px;
+  }
+
+.ptext2 {
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 610px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px;
+  font-size: 20px;
+}
+
+.ptext3 {
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 610px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px;
+  font-size: 20px;
+}
+
 
 h6 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -201,13 +293,12 @@ h6 {
 }
 
 .invprosol {
-    height: 600px;
-    width: 1400px;
-    border-radius: 16px;
-    background-color: rgba(32,52,103,255);
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow:  0 0 15px #ff680a;
+  height: 700px;
+  width: 1400px;
+  background-image: url("Web_Photo_Editor.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
     transform: translateY(1600px);
 }
 
@@ -222,17 +313,15 @@ h6 {
 }
 
 .tarint {
-    height: 400px;
-    width: 1400px;
-    border-radius: 16px;
-    background-color: #212e6e;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow:  0 0 15px rgba(32,52,103,255);
-    transform: translateY(2000px);
-    
+  height: 700px;
+  width: 1400px;
+  background-image: url("Web_Photo_Editor.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  transform: translateY(2000px);
+   
 }
-
 .tarinttext {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ff680a;
