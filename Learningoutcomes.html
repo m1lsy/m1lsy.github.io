@@ -72,9 +72,28 @@
             <div class="learning-outcome-block">
                 Unfortunately, I only came to this realization at the end of the semester and thus I feel that I am lacking in evidence of this learning outcome. In my future semesters, I hope to make more use of feedpulse and I aim to engage more with my teachers. Despite this problem, I still received very helpful feedback throughout the semester from both my teachers and fellow students which was a great help to my work.
             </div>
-            <!-- <div class="learning-outcome-block">
-                <div class="perleaslide">
-                    <!-- Add slider content here -->
+   
+                </div>
+
+                <div class="slider-section">
+                  <div class="slider" x-data="{start: true, end: false}">
+                    <div class="slider-content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+                      <div class="slider-item">
+                        <img class="slider-image" src="projectplan1.png">
+                      </div>
+                      <div class="slider-item">
+                        <img class="slider-image" src="projectplan2.png">
+                      </div>
+                      <div class="slider-item">
+                        <img class="slider-image" src="projectplan3.png">
+                      </div>
+                      <div class="slider-item">
+                        <img class="slider-image" src="projectplan4.png">
+                      </div>
+                      <div class="slider-item">
+                        <img class="slider-image" src="projectplan5.png">
+                      </div>
+                    </div>
                 </div>
             </div> 
         </div>

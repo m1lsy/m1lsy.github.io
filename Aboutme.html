@@ -1,107 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="aboutme.css">
-<section>
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="aboutme.css">
 </head>
+
 <body>
     <div class="flexcontainer">
-    <div class="home"><a href="index.html"><img src="MPSTARWHITE.PNG" alt=""></a>
-    </div>
-    <div class="row">
-        <div class="col-1">
-           <h1>mila</h1>
-           <h2>pulvirenti</h2>
+        <div class="home">
+            <a href="index.html"><img src="MPSTARWHITE.PNG" alt=""></a>
         </div>
-                <div class="container">
-        
-                    <div class="swiper">
-                
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide"><img src="circlepic1.PNG" alt=""></div>
-                            <div class="swiper-slide"><img src="circlepic5.PNG" alt=""></div>
-                            <div class="swiper-slide"><img src="circlepic2.PNG" alt=""></div>
-                            <div class="swiper-slide"><img src="circlepic7.PNG" alt=""></div>
-                            <div class="swiper-slide"><img src="circlepic3.PNG" alt=""></div>
-                            <div class="swiper-slide"><img src="circlepic8.PNG" alt=""></div>
-                        </div>
-              
-                        <div class="swiper-pagination"></div>
-              
-                
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-              
+        <div class="row">
+            <div class="col-1">
+                <h1>mila <br />pulvirenti</h1>
+            </div>
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="circlepic1.PNG" alt=""></div>
+                        <div class="swiper-slide"><img src="circlepic5.PNG" alt=""></div>
+                        <div class="swiper-slide"><img src="circlepic2.PNG" alt=""></div>
+                        <div class="swiper-slide"><img src="circlepic7.PNG" alt=""></div>
+                        <div class="swiper-slide"><img src="circlepic3.PNG" alt=""></div>
+                        <div class="swiper-slide"><img src="circlepic8.PNG" alt=""></div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
+        </div>
     </div>
     <h3>ICT & Media Design student from Durban, South Africa.</h3>
-    <div class="info2"> I am currently studying at Fontys University of Applied Sciences in Eindhoven. I selected this course as I feel that it allows me
-         to express both creative and technical skills, which allows me to express my creativity through design while still building interactive, 
-         digital applications.</div>
-   
-        </div>
-   
+    <div class="info2"> I am currently studying at Fontys University of Applied Sciences in Eindhoven. <br> I selected this
+        course as I feel that it allows me to express both creative and technical skills, which allows me to express my
+        creativity through design while still building interactive, digital applications.</div>
 
-<div class="skillbars">
-    <h3>Skill Levels</h3>
-    <div class="skill-box">
-        <p>HTML</p>
-        <div class="skill">
-            <div class="skill-level"style="width:20%"></div>
+    
+
+        <div class="skill-box">
+            <p>HTML</p>
+            <div class="skill">
+                <div class="skill-level" style="width:20%"></div>
+            </div>
         </div>
 
-    <div class="skill-box">
-        <p>CSS</p>
-        <div class="skill">
-            <div class="skill-level"style="width:15%"></div>
+        <div class="skill-box">
+            <p>CSS</p>
+            <div class="skill">
+                <div class="skill-level" style="width:15%"></div>
+            </div>
         </div>
 
-    <div class="skill-box">
-        <p>Python</p>
-    <div class="skill">
-        <div class="skill-level" style="width:5%" ></div>
+        <div class="skill-box">
+            <p>Python</p>
+            <div class="skill">
+                <div class="skill-level" style="width:5%"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <p>Design</p>
+            <div class="skill">
+                <div class="skill-level" style="width:60%"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="skill-box">
-        <p>Design</p>
-        <div class="skill">
-            <div class="skill-level" style="width:60%"></div>
-        </div>
-    </div>
-</div> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        
-    const swiper = new Swiper('.swiper', {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-
-        loop: true,
-      
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-      });
-      </script>
-</div>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
-</section>
 
 </html>
