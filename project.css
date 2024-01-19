@@ -1,116 +1,84 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    } 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      background-color: #F56334;
-    }
-    
-    nav ul li {
-      list-style: none;
-      display: inline-block;
-      margin-right: 30px;
-    }
-    
-    nav ul li a {
-      text-decoration: none;
-      font-size: 30px;
-      color: rgb(50, 59, 99);
-      text-transform: lowercase;
-    }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(50, 59, 99);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #F56334;
+  text-transform: lowercase;
+}
+
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  /* Styles for screens up to 768px wide */
- }
-body{
-  background-color: rgba(245,99,52,255);
-}
-/*Project Page*/
-#projectpage {
-    background-image: url(Web_Photo_Editor.jpg);
-    
-  }
 
-h1 {
-  color: rgba(32,52,103,255);
+body {
+  background-color: rgba(245, 99, 52, 255);
+}
+
+/* Project Page */
+#projectpage {
+  background-image: url(Web_Photo_Editor.jpg);
+}
+
+h1, .pizzaproject h2 {
+  color: rgba(32, 52, 103, 255);
   text-shadow: 0 0 10px #F56334, 0 0 10px #F56334, 0 0 15px #F56334;
-  font-size: 100px;
-  font-weight: 900;
   text-align: center;
 }
 
-.pizzaproject h2{
-  color: rgba(32,52,103,255);
-  text-shadow: 0 0 10px #F56334, 0 0 10px #F56334, 0 0 15px #F56334;
-  font-size: 40px;
-   
+h1 {
+  font-size: 100px;
+  font-weight: 900;
 }
 
-.pizzaproject {
-  width: 1300px;
-  height: 1500px;
-  background-color:rgba(32,52,103,255) ;
-  box-shadow: 0 0 15px rgba(32,52,103,255);
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.pic1 img{
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 20;
-}
-
-.pic2 img{
-  width: 40%;
-  margin-left: 30%;
-}
-.houseproject h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgba(32,52,103,255);
-  text-shadow: 0 0 10px #F56334, 0 0 10px #F56334, 0 0 15px #F56334;
+.pizzaproject h2, .houseproject h2 {
   font-size: 40px;
   margin-left: 15px;
   margin-top: 2%;
-
 }
-.houseproject {
+
+.pizzaproject, .houseproject {
   width: 1300px;
-  height: auto;
-  background-color:rgba(32,52,103,255) ;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  background-color: rgba(32, 52, 103, 255);
+  box-shadow: 0 0 15px rgba(32, 52, 103, 255);
   border-radius: 25px;
-
-
-}
-.pizzaproject p {
-  color: #fff;
-  font-size: 25px;
-  padding: 10%;
-
+  margin-top: 5%;
 }
 
-.houseproject p {
+.pizzaproject p, .houseproject p {
   color: #fff;
   font-size: 25px;
   padding: 10%;
 }
 
-:root {
-  --scrollcolor: #fff;
-  --scrollbackground: #141e27;
+.pic1 img, .pic2 img {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20px;
 }
 
 .slider {
@@ -126,23 +94,23 @@ h1 {
   gap: 1rem;
   padding-bottom: 1rem;
   scrollbar-color: var(--scrollcolor) var(--scrollbackground);
+}
 
-  &::-webkit-scrollbar {
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 1rem;
-    background: var(--scrollbackground);
-  }
+.slider__content::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 1rem;
+  background: var(--scrollbackground);
+}
 
-  &::-webkit-scrollbar-thumb {
-    border-radius: 1rem;
-    background: var(--scrollcolor);
-  }
+.slider__content::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--scrollcolor);
+}
 
-  &::-webkit-scrollbar-track {
-    border-radius: 1rem;
-    background: var(--scrollbackground);
-  }
+.slider__content::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background: var(--scrollbackground);
 }
 
 .slider__item {
@@ -156,15 +124,6 @@ h1 {
   overflow: hidden;
   position: relative;
   aspect-ratio: 1;
-
-  @media (min-width: 460px) {
-    aspect-ratio: 2/3;
-    min-width: calc((100% / 2) - 2rem);
-  }
-
-  @media (min-width: 940px) {
-    min-width: calc((100% / 3) - 4rem);
-  }
 }
 
 .slider__image {
@@ -172,7 +131,6 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
   top: 0;
   left: 0;
 }
@@ -187,15 +145,21 @@ h1 {
   align-content: center;
   align-items: center;
   pointer-events: none;
+}
 
-  @media (min-width: 460px) {
+@media (min-width: 460px) {
+  .slider__item {
+    aspect-ratio: 2/3;
+    min-width: calc((100% / 2) - 2rem);
+  }
+
+  .slider__nav {
     justify-content: flex-end;
   }
 }
-.houseproject .slider {
-  margin-right: auto;
-  margin-left: auto;
-  transform: translateY(50px);
 
+@media (min-width: 940px) {
+  .slider__item {
+    min-width: calc((100% / 3) - 4rem);
+  }
 }
-
