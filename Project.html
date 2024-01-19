@@ -6,31 +6,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project</title>
+        <header>
+          <nav>
+              <ul>
+                  <li><a href="Aboutme.html">About Me</a></li>
+                  <li><a href="Learningoutcomes.html">Outcomes</a></li>
+                  <li><a href="index.html">Home</a></li>
+              </ul>
+          </nav>    
+      </header>
     </head>
     <body id="projectpage">
             <h1>Project Work</h1>
         <div class="houseproject">
-            <h2>Housing Website</h2>
+          
             <div class="slider">
                 <div class="slider" x-data="{start: true, end: false}">
                   <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
                     <div class="slider__item">
-                      <img class="slider__image" src="protohouse1.png">
+                      <img class="slider__image" src="finalhous.png">
                     </div>
                     <div class="slider__item">
-                      <img class="slider__image" src="protohouse2.png">
+                      <img class="slider__image" src="finalproto.png">
                     </div>
                     <div class="slider__item">
-                      <img class="slider__image" src="protohouse3.png">
+                      <img class="slider__image" src="loginss.png">
                     </div>
                     <div class="slider__item">
-                      <img class="slider__image" src="protohouse4.png">
+                      <img class="slider__image" src="signupss.png">
+                    </div>
+                    <div class="slider__item">
+                      <img class="slider__image" src="Divyapersona.png">
+                    </div>
+                    <div class="slider__item">
+                      <img class="slider__image" src="Majapersona.png">
+                    </div>
+                    <div class="slider__item">
+                      <img class="slider__image" src="jackpersona.png">
                     </div>
                   </div>
-                </div>
+                    <p>This semester, our group project was to create a housing website for international students.<br> I was assigned to create the log in, sign in and about us page for our website, aswell as create user personas based on the results from the user research we conducted.
+                      <br>I am very pleased with the outcome of my pages and I am proud of the progress I have made.
+                      I beleive that the more I practice, the high quality my coding abilities become and this is evident in my code.
+                    </p>
+              </div>
                </div>
           <div class="pizzaproject">
-          <h2>Pizza Project</h2></div>
+            <div class="pic1"><img src="pizzaproj.png"></div> 
+            <div class="pic2"><img src="pizzaproj2.png"></div> 
+              <p>At the start of the semester, I worked on the shopping cart for the Pizza Project.
+                I made a fully functional shopping cart where users could add in their desired quantity
+                and flavour of pizza and make an online order. This was not an easy proccess but I am
+                proud of myself and pleased with the end result. This was also my first group project
+                since starting my studies and so I learnt a lot of important skills.
+              </p>
+            </div>
+            </div>
+           </div>
     </body>
 
 </html>

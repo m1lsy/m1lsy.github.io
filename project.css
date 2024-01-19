@@ -4,6 +4,25 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     } 
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #F56334;
+    }
+    
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 30px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      font-size: 30px;
+      color: rgb(50, 59, 99);
+      text-transform: lowercase;
+    }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -38,15 +57,24 @@ h1 {
 }
 
 .pizzaproject {
-  width: 1250px;
-  height: 200px;
-  background-color:#f56434b0 ;
+  width: 1300px;
+  height: 1500px;
+  background-color:rgba(32,52,103,255) ;
   box-shadow: 0 0 15px rgba(32,52,103,255);
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(200px);
+  
+}
+.pic1 img{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20;
 }
 
+.pic2 img{
+  width: 40%;
+  margin-left: 30%;
+}
 .houseproject h2 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgba(32,52,103,255);
@@ -58,14 +86,28 @@ h1 {
 }
 .houseproject {
   width: 1300px;
-  height: 700px;
-  background-color:#f56434b0 ;
+  height: auto;
+  background-color:rgba(32,52,103,255) ;
   margin-left: auto;
   margin-right: auto;
-  
-  transform: translateY(200px);
+  margin-top: 5%;
+  border-radius: 25px;
+
 
 }
+.pizzaproject p {
+  color: #fff;
+  font-size: 25px;
+  padding: 10%;
+
+}
+
+.houseproject p {
+  color: #fff;
+  font-size: 25px;
+  padding: 10%;
+}
+
 :root {
   --scrollcolor: #fff;
   --scrollbackground: #141e27;
