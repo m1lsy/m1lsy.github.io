@@ -1,0 +1,200 @@
+body {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA
+}
+#learning-background {
+    background-color: #BADA55;
+}
+
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px; 
+    background-color: #FAFAFA; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+}
+
+.sidebar a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.sidebar a:hover {
+    color: #BADA55;
+}
+
+.sidebar img {
+    width: 80%; 
+    margin-bottom: 20px; 
+}
+
+.sidetext {
+    margin-top: 30%;
+}
+
+
+.content {
+    margin-left: 200px; 
+    padding: 20px;
+}
+
+.banner {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.banner p {
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #BADA55;
+}
+p {
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.sidetext p {
+    text-align: left;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.title img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/* slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+.prev:hover, .next:hover {
+    color: #BADA55;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Images */
+.slideshow-images img {
+    width: 100%;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+.text {
+    margin-left: 200px; 
+    padding: 20px;
+}
+
+.text h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 0; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+}
+.survey-heading {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.survey-heading:hover {
+    color: white    ;
+}
