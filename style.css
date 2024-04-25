@@ -198,3 +198,35 @@ h2 {
 .survey-heading:hover {
     color: white    ;
 }
+
+.LO-container {
+    display: flex;
+}
+
+.box-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.box-link:visited {
+    color: #000000;
+}
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: #BADA55;
+    margin-right: 10px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #bbda55bb;
+}
+
+.LO-container h2{
+    text-align: center;
+    margin-top: 100px;
+}
