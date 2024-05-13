@@ -271,3 +271,7 @@ ul {
 .code-ss img {
   max-width: 50%;
 }
+
+b {
+  font-weight: 600;
+}
