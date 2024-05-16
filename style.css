@@ -10,13 +10,27 @@ body {
 #learning-background1 {
   background: linear-gradient(to bottom, #BADA55 60%, #FAFAFA 60%);
 }
-
-
 #learning-background3 {
   background: linear-gradient(to bottom, #BADA55 28%, #FAFAFA 28%);
 }
 
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+p {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+}
 
 .sidebar {
   position: fixed;
@@ -53,6 +67,9 @@ body {
 
 .sidetext {
   margin-top: 30%;
+}
+.sidetext p {
+  text-align: left;
 }
 
 .content {
@@ -97,24 +114,13 @@ nav a {
 nav a:hover {
   color: #BADA55;
 }
-p {
-  text-align: justify;
-  margin-right: 20px;
-}
 
-.sidetext p {
-  text-align: left;
-}
+
 
 .title {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-weight: 300;
 }
 
 .title img {
@@ -193,12 +199,7 @@ h1 {
   flex-direction: row;
 }
 
-h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 20px;
-  
-}
+
 .survey-heading {
   display: inline-block;
   margin-right: 20px; 
@@ -210,10 +211,14 @@ h2 {
 
 .LO-container {
   display: flex;
+  padding-top: 300px;
 }
 
 .box-link {
+  display: flex;
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #000000;
   flex: 1;
@@ -222,15 +227,24 @@ h2 {
 .box-link:visited {
   color: #000000;
 }
+.LO1-box {
+  background-color: #FAFAFA;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+}
 .box {
   width: 230px;
   height: 230px;
   background-color: #BADA55;
-  margin-right: 10px;
-  margin-top: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex: 1;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .box:hover {
@@ -242,20 +256,16 @@ h2 {
   margin-top: 100px;
 }
 
-.box2 {
+.project-box {
   width: 250px;
   height: 250px;
-  background-color: #BADA55;
+  background-color: #fafafa99;
   margin-left: 100px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.box2:hover {
-  background-color: #bbda55bb;
 }
 .image-container {
   display: flex;
