@@ -168,8 +168,6 @@ nav a:hover {
 }
 
 
-
-
 @media screen and (max-width: 768px) {
   .sidebar {
       width: 100%;
@@ -269,17 +267,15 @@ nav a:hover {
 }
 .image-container {
   display: flex;
-  align-items: center; 
-}
-.image-container img {
- margin-right: 200px;
+  text-align: center;
+  background-color: #fafafa3d;
 }
 .bottom-logo {
   float: right;
 }
 .image-container-bottom {
   display: flex;
-  align-items: center; 
+  text-align: center;
 }
 
 ul {
@@ -288,6 +284,7 @@ ul {
 
 .code-ss img {
   max-width: 50%;
+  text-align: center;
 }
 
 b {
