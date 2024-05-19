@@ -23,13 +23,21 @@ p {
 
 h1 {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #fafafa39;
+  
 }
 
 .sidebar {
@@ -225,12 +233,15 @@ nav a:hover {
 .box-link:visited {
   color: #000000;
 }
-.LO1-box {
-  background-color: #FAFAFA;
+.LO-box {
+  background-color: #fafafaa7;
   justify-content: space-between;
   display: flex;
   padding: 20px;
   margin: 10px;
+}
+.LO-box img {
+  margin-left: 100px;
 }
 .box {
   width: 230px;
@@ -245,8 +256,18 @@ nav a:hover {
   box-sizing: border-box;
 }
 
+.textbox {
+  width: 400px;
+  height: 300px;
+  background-color: #BADA55;
+  display: flex;
+  padding: 30px;
+  margin-right: 100px;
+  align-items: center;
+}
+
 .box:hover {
-  background-color: #bbda55bb;
+  background-color: #bbda5590;
 }
 
 .LO-container h2{
@@ -265,11 +286,7 @@ nav a:hover {
   align-items: center;
   text-align: center;
 }
-.image-container {
-  display: flex;
-  text-align: center;
-  background-color: #fafafa3d;
-}
+
 .bottom-logo {
   float: right;
 }
