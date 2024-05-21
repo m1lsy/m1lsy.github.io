@@ -6,6 +6,7 @@
     <title>Development & Version Control</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d94b8dde1f.js" crossorigin="anonymous"></script>
 </head>
 <body id="learning-background">
     <div class="sidebar">
@@ -16,8 +17,8 @@
         <a href="LO4.html">PROFFESIONAL STANDARD &#8599</a>
         <a href="LO5.html">PERSONAL LEADERSHIP &#8599</a>
         <BR><BR><BR>
-        <a href="#project1">ABOUT ME &#8599</a>
-        <a href="#project2">PROJECT WORK &#8599</a>
+        <a href="aboutme.html">ABOUT ME &#8599</a>
+        <a href="projects.html">PROJECTS &#8599</a>
         <a href="#project3">CONTACT &#8599</a>
     </div>
     <div class="content">
@@ -34,58 +35,89 @@
         </p>
         <section class="image-container">
             <figure>
-                <div class="code-ss">
                     <img src="OLDCODESS.png">
                     <figcaption>FIGURE A</figcaption>
-                </div>
             </figure>
         </section>
-        <ul>-REPITITION: The font family has been declared many times which is unnecessary and can be easily avoided by defining a global font family.</ul>
-    <ul>-MAGIC NUMBERS: The code uses hardcoded values for widths, height and font size which can make maintenance and stability a challenge. </ul>
-    <ul>-LACK OF CONCISENCY: The code uses different units for fonts (px) and widths/heights (px and %). Its better practice to just use one unit of measurement throughout the code.</ul>
-    <ul>-INCOMPLETE SELECTORS: &#39;H3&#39; and &#39;H6&#39; selectors are not specific to any class or ID which can result in unintended styling. Using a class and ID can help target specific design elements.</ul>
-    <ul>-NO COMMENTS: Not commenting code is a bad practice as it will make it harder for developers to maintain, collaborate and understand my code. </ul>
-    <ul>-CLASS NAMES: Another problem with my code which I picked up on by getting feedback from some other students was that my class names were often confusing and too lengthy.</ul>
-    <p>
-        It is very important to fix simple mistakes like these as they can lead to bad habits which will affect me later on, especially when collaborating with other people as they will face difficulties interpreting my code. With these aspects in mind, I began my developing process for my portfolio. 
-    </p>
-    <br><br>
-    <h2>Sematic HTML</h2>
-    <h3>What I Did</h3>
-    <p>
-        Attending Metaxas' lectures taught me the importance of using semantic HTML. During this semester, I made a conscious effort to use semantic tags instead of defaulting to &ltdiv&gt; or &ltspan&gt;, which I often use due to ingrained coding habits. For instance, I used the &ltsection&gt; tag to organize my page into distinct sections, which allowed me to change the background color of specific areas.
-    </p>
-    <h3>What I learned</h3>
-    <p>
-        I learned that semantic HTML is crucial for creating web content that is accessible, maintainable, and SEO-friendly. This awareness has highlighted the importance of using appropriate HTML tags rather than relying on non-semantic ones.
-    </p>
-    <h3>How I think it went</h3>
-    <p>
-        Reflecting on my progress, I recognize that in future projects, I need to focus more on reducing my reliance on the &ltdiv&gt; tag. Despite my efforts, I still use it too frequently. Although it feels almost like muscle memory to reach for a &ltdiv&gt; tag, I am determined to continue improving and fully adopt the use of semantic HTML. 
-    </p>
-   
-    <br><br>
-    <h2>Banner and Slideshow</h2>
-    <p>
-        I wanted to create something eye catching and exciting in my portfolio that added a unique touch. After brainstorming ideas, I was inspired to create a banner which displays a moving text effect with a smooth, infinite, scrolling animation. The banner sits at the top of each page and displays the name of the page that the user is currently on. To create this effect, I made use of CSS styles and animations. I experimented with various CSS properties to ensure the scrolling effect was smooth and visually appealing. Additionally, I had to consider the performance impact of continuous animations and optimized the code to minimize any potential lag.
-    </p>
-    <p>
-        The banner not only enhances the user experience by providing a dynamic visual element but also shows my ability to implement CSS animations. Moving forward, I plan to incorporate more interactive and engaging elements into my portfolio.
-    </p>
-    <br><br>
-    <h2>Magic 8 Ball</h2>
-    <p>
-        To practice my JavaScript skills, I decided to challenge myself with some fun personal projects. I started by creating a Magic 8 Ball that generates a random answer when clicked. The reason I chose this project is because I often use a Magic 8 Ball app for fun, making it an area of personal interest.
-    </p>
-    <p>
-        To begin, I watched a tutorial to get a general idea of how to create it, then I developed my own version with a few tweaks to make it unique. The project involved learning how to generate random responses and update the display dynamically using JavaScript.
-    </p>
-    <p>
-        Although it is a simple project, it effectively helped me practice and improve my JavaScript skills. I learned how to handle user interactions, manipulate the DOM, and implement basic logic in a web application. Reflecting on the experience, I feel more confident in my ability to take on more complex projects in the future. This small but meaningful exercise has motivated me to continue exploring and creating with JavaScript.
-    </p>
-
-    <iframe width="420" height="315"
-    src="https://youtu.be/Vygf3-OHfFI"></iframe>
-</div>
+        <ul>
+            <li>REPITITION: The font family has been declared many times which is unnecessary and can be easily avoided by defining a global font family.</li>
+            <li>MAGIC NUMBERS: The code uses hardcoded values for widths, height and font size which can make maintenance and stability a challenge. </li>
+            <li>LACK OF CONCISENCY: The code uses different units for fonts (px) and widths/heights (px and %). Its better practice to just use one unit of measurement throughout the code.</li>
+            <li>INCOMPLETE SELECTORS: &#39;H3&#39; and &#39;H6&#39; selectors are not specific to any class or ID which can result in unintended styling. Using a class and ID can help target specific design elements.</li>
+            <li>NO COMMENTS: Not commenting code is a bad practice as it will make it harder for developers to maintain, collaborate and understand my code. </li>
+            <li>CLASS NAMES: Another problem with my code which I picked up on by getting feedback from some other students was that my class names were often confusing and too lengthy.</li>
+        </ul>
+        <p>
+            It is very important to fix simple mistakes like these as they can lead to bad habits which will affect me later on, especially when collaborating with other people as they will face difficulties interpreting my code. With these aspects in mind, I began my developing process for my portfolio. 
+        </p>
+        <br><br>
+        <h2>Sematic HTML</h2>
+        <h3>What I Did</h3>
+        <p>
+            Attending Metaxas' lectures taught me the importance of using semantic HTML. During this semester, I made a conscious effort to use semantic tags instead of defaulting to &ltdiv&gt; or &ltspan&gt;, which I often use due to ingrained coding habits. For instance, I used the &ltsection&gt; tag to organize my page into distinct sections, which allowed me to change the background color of specific areas.
+        </p>
+        <h3>What I learned</h3>
+        <p>
+            I learned that semantic HTML is crucial for creating web content that is accessible, maintainable, and SEO-friendly. This awareness has highlighted the importance of using appropriate HTML tags rather than relying on non-semantic ones.
+        </p>
+        <h3>How I think it went</h3>
+        <p>
+            Reflecting on my progress, I recognize that in future projects, I need to focus more on reducing my reliance on the &ltdiv&gt; tag. Despite my efforts, I still use it too frequently. Although it feels almost like muscle memory to reach for a &ltdiv&gt; tag, I am determined to continue improving and fully adopt the use of semantic HTML. 
+        </p>
+        <br><br>
+        <h2>Banner and Slideshow</h2>
+        <p>
+            I wanted to create something eye catching and exciting in my portfolio that added a unique touch. After brainstorming ideas, I was inspired to create a banner which displays a moving text effect with a smooth, infinite, scrolling animation. The banner sits at the top of each page and displays the name of the page that the user is currently on. To create this effect, I made use of CSS styles and animations. I experimented with various CSS properties to ensure the scrolling effect was smooth and visually appealing. Additionally, I had to consider the performance impact of continuous animations and optimized the code to minimize any potential lag.
+        </p>
+        <p>
+            The banner not only enhances the user experience by providing a dynamic visual element but also shows my ability to implement CSS animations. Moving forward, I plan to incorporate more interactive and engaging elements into my portfolio.
+        </p>
+        <br><br>
+        <h2>Magic 8 Ball</h2>
+        <p>
+            To practice my JavaScript skills, I decided to challenge myself with some fun personal projects. I started by creating a Magic 8 Ball that generates a random answer when clicked. The reason I chose this project is because I often use a Magic 8 Ball app for fun, making it an area of personal interest.
+        </p>
+        <p>
+            To begin, I watched a tutorial to get a general idea of how to create it, then I developed my own version with a few tweaks to make it unique. The project involved learning how to generate random responses and update the display dynamically using JavaScript.
+        </p>
+        <p>
+            Although it is a simple project, it effectively helped me practice and improve my JavaScript skills. I learned how to handle user interactions, manipulate the DOM, and implement basic logic in a web application. Reflecting on the experience, I feel more confident in my ability to take on more complex projects in the future. This small but meaningful exercise has motivated me to continue exploring and creating with JavaScript.
+        </p>
+        <section class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vygf3-OHfFI?si=Rj46nfYNEAZ42Mqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border-radius: 30px;"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <h2>Version Control</h2>
+        <h3>What I Did:</h3>
+        <p>
+            Embracing the principles of version control, I have utilized platforms like Git to manage and track changes effectively throughout the development process.
+            <br><br>
+            At the beginning of the semester, I had a lot of confusion and concern about Git, as I didn’t quite understand what it was. I constantly heard the term mentioned, but I avoided it, thinking it would be a difficult concept to grasp. After getting help from peers who were further along in their studies, I finally understood what Git was and how helpful it is.
+            <br><br>
+            After encountering many problems while using HERA to host my previous portfolio, I researched other ways to host websites and learned that I could host on GitHub. I found the entire process to be much simpler than HERA, and I have encountered no problems so far.
+            <br><br>
+            Since I am using GitHub for hosting, I had to transfer my repository to GitLab to make it accessible to my teachers. I also set up my GitLab account for group projects, as we used GitLab to collaborate on the same code.
+        </p>
+        <div class="icon-container">
+            <a href="https://git.fhict.nl/I521945" class="git-icon" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-gitlab"></i>
+            </a>
+            <a href="https://github.com/m1lsy" class="git-icon" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+        </div>
+        <h3>What I Learned:</h3>
+        <p>
+            Through using Git, I have learned many important and crucial skills that will benefit me greatly in the years to come. These skills include:
+        </p>
+        <ul>
+            <li>COMMIT MESSAGING: Writing clear, concise, and standardized commit messages.</li>
+            <li>BRANCHING AND MERGING: Managing branches and resolving conflicts efficiently.</li>
+            <li>COLLABORATION: Using pull requests, conducting code reviews, linking commits to issues.</li>
+            <li>WORKFLOWS: Implementing Gitflow, feature branching, trunk-based development.</li>
+                
+        </ul>
+        
+    </div>
 </body>
 </html>

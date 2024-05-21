@@ -220,6 +220,14 @@ nav a:hover {
   padding-top: 300px;
 }
 
+.image-container img{
+  max-width: 50%;
+}
+
+figure {
+  text-align: center;
+}
+
 .box-link {
   display: flex;
   display: inline-block;
@@ -274,36 +282,31 @@ nav a:hover {
   text-align: center;
   margin-top: 100px;
 }
-
-.project-box {
-  width: 250px;
-  height: 250px;
-  background-color: #fafafa99;
-  margin-left: 100px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.iframe-container {
   text-align: center;
 }
-
-.bottom-logo {
-  float: right;
-}
-.image-container-bottom {
-  display: flex;
-  text-align: center;
-}
-
 ul {
   list-style-type: circle;
 }
 
 .code-ss img {
   max-width: 50%;
-  text-align: center;
+  align-items: center;
 }
 
 b {
   font-weight: 600;
 }
+
+.icon-container {
+  display: flex;
+  gap: 20px; 
+}
+.icon-container a {
+  font-size: 8rem; 
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.icon-container a:hover {
+  color: #000;
