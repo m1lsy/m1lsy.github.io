@@ -218,10 +218,11 @@ nav a:hover {
 .LO-container {
   display: flex;
   padding-top: 300px;
+  gap: 15px;
 }
 
 .image-container img{
-  max-width: 50%;
+  max-width: 65%;
 }
 
 figure {
@@ -281,6 +282,7 @@ figure {
 .LO-container h2{
   text-align: center;
   margin-top: 100px;
+
 }
 .iframe-container {
   text-align: center;
@@ -310,3 +312,4 @@ b {
 }
 .icon-container a:hover {
   color: #000;
+}
