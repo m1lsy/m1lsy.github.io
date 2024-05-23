@@ -219,10 +219,12 @@ nav a:hover {
   display: flex;
   padding-top: 300px;
   gap: 15px;
+  justify-content: center;
 }
 
 .image-container img{
   max-width: 65%;
+  border-radius: 20px;
 }
 
 figure {
@@ -248,9 +250,11 @@ figure {
   display: flex;
   padding: 20px;
   margin: 10px;
+  border-radius: 20px;
 }
 .LO-box img {
   margin-left: 100px;
+  border-radius: 20px;
 }
 .box {
   width: 230px;
@@ -263,6 +267,7 @@ figure {
   flex: 1;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .textbox {
@@ -273,6 +278,7 @@ figure {
   padding: 30px;
   margin-right: 100px;
   align-items: center;
+  border-radius: 20px;
 }
 
 .box:hover {
@@ -294,6 +300,7 @@ ul {
 .code-ss img {
   max-width: 50%;
   align-items: center;
+  border-radius: 20px;
 }
 
 b {
@@ -302,7 +309,8 @@ b {
 
 .icon-container {
   display: flex;
-  gap: 20px; 
+  gap: 200px;
+  justify-content: center;
 }
 .icon-container a {
   font-size: 8rem; 
@@ -312,4 +320,136 @@ b {
 }
 .icon-container a:hover {
   color: #000;
+}
+
+/* Icons on Contact Page*/
+.contact-icon-container {
+  display: flex;
+  gap: 20px; 
+  text-align: center;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.contact-icon-container a {
+  font-size: 10rem; 
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-icon-container i {
+  color: #BADA55;
+}
+
+/* Contact Section */
+.contact-container {
+  background-color: #BADA55;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.contact-info .divider {
+  background-color: rgb(0, 0, 0);
+}
+
+.contact-info, .contact-form {
+  background-color: #BADA55;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  width: 40%;
+  margin: 0;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0;
+}
+
+.contact-info h2, .contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-form input, .contact-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 2000px;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fafafa7b;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.carousel-item {
+  min-width: 50%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  margin: 40px;
+  margin-top: 70px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

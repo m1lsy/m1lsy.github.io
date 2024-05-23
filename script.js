@@ -35,3 +35,29 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, 2000); // Change slide every 3 seconds
+
+// script.js
+let currentIndex = 0;
+
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+document.querySelector('.carousel-button.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+});
+
+document.querySelector('.carousel-button.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const offset = -currentIndex * 50; // Change to 50 to match the item width percentage
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+// Initialize carousel position
+updateCarousel();
+
