@@ -12,12 +12,26 @@
         <div class="banner">
             <p> Mila Pulvirenti  Mila Pulvirenti  Mila Pulvirenti  Mila Pulvirenti  Mila Pulvirenti  Mila Pulvirenti</p>
         </div>
-        <nav>
-            <a href="learningoutcomes.html">Learning Outcomes</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="projects.html">Projects </a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div id="nav-container"></div>
+        <script>
+            const nav = document.createElement('nav');
+    
+            const menuItems = [
+                { href: 'learningoutcomes.html', text: 'Learning Outcomes' },
+                { href: 'aboutme.html', text: 'About Me' },
+                { href: 'projects.html', text: 'Projects' },
+                { href: 'contact.html', text: 'Contact' }
+            ];
+
+            menuItems.forEach(item => {
+                const a = document.createElement('a');
+                a.href = item.href;
+                a.textContent = item.text;
+                nav.appendChild(a);
+            });
+    
+            document.getElementById('nav-container').appendChild(nav);
+        </script>
         <div class="sidebar">
             <img src="mpcircle.png">
             <div class="sidetext">

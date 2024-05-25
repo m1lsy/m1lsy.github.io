@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
   margin: 0;
@@ -105,6 +106,7 @@ h3 {
   100% { transform: translateX(200%); }
 }
 
+/* INDEX PAGE */
 nav {
   display: flex;
   justify-content: space-between;
@@ -137,14 +139,19 @@ nav a:hover {
   
 }
 
-/* slideshow container */
+/* ABOUT ME */
 .slideshow-container {
   position: relative;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin-left: 150px;
 }
 
-/* navigation arrows */
+.about-me-container {
+  display: flex;
+}
+.about-me-container p {
+  width: 500px;
+}
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -251,6 +258,7 @@ figure {
   padding: 20px;
   margin: 10px;
   border-radius: 20px;
+  align-items: center;
 }
 .LO-box img {
   margin-left: 100px;
@@ -402,7 +410,7 @@ b {
 }
 .carousel-container {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 2000px;
   height: 500px;
   overflow: hidden;
@@ -440,6 +448,7 @@ b {
   padding: 10px;
   cursor: pointer;
   z-index: 10;
+  border-radius: 20px
 }
 
 .carousel-button.prev {
@@ -451,5 +460,6 @@ b {
 }
 
 .carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #BADA55;
+  color: #000;
 }
