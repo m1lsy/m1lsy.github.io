@@ -19,7 +19,7 @@ body {
 
 p {
   text-align: justify;
-  margin-right: 20px;
+  margin: 50px;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h3 {
@@ -56,6 +56,10 @@ h3 {
   text-align: left; 
 }
 
+.sidebar p {
+  margin: 0%;
+}
+
 .sidebar a {
   display: block;
   color: #000000;
@@ -79,6 +83,7 @@ h3 {
 }
 .sidetext p {
   text-align: left;
+  padding: 0;
 }
 
 .content {
@@ -139,6 +144,7 @@ nav a:hover {
   
 }
 
+
 /* ABOUT ME */
 .slideshow-container {
   position: relative;
@@ -146,30 +152,37 @@ nav a:hover {
   margin-left: 150px;
 }
 
+.star-icon {
+  font-size: 2rem; 
+  color: #BADA55;
+  text-decoration: none;
+}
+
+.aboutme-heading h1{
+  font-size: 40px;
+}
 .about-me-container {
   display: flex;
 }
 .about-me-container p {
   width: 500px;
 }
-.prev, .next {
+.prev,
+.next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%); /* Adjust position relative to the container */
   z-index: 1;
   cursor: pointer;
   color: #fff;
   font-size: 24px;
   padding: 10px;
   text-decoration: none;
-  
-}
-.prev:hover, .next:hover {
-  color: #BADA55;
 }
 
-.prev {
-  left: 0;
+.prev:hover,
+.next:hover {
+  color: #BADA55;
 }
 
 .next {
@@ -180,6 +193,10 @@ nav a:hover {
 .slideshow-images img {
   width: 100%;
   display: none;
+}
+
+.about-me-container p {
+  margin: 0%;
 }
 
 
@@ -227,10 +244,18 @@ nav a:hover {
   padding-top: 300px;
   gap: 15px;
   justify-content: center;
+  max-width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .image-container img{
-  max-width: 65%;
+  max-width: 60%;
   border-radius: 20px;
 }
 
@@ -259,6 +284,21 @@ figure {
   margin: 10px;
   border-radius: 20px;
   align-items: center;
+}
+
+.LO-box-single {
+  justify-content: center;
+  background-color: #fafafaa7;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.LO-box-single img {
+  border-radius: 20px;
+  max-width: 50%;
 }
 .LO-box img {
   margin-left: 100px;
@@ -462,4 +502,34 @@ b {
 .carousel-button:hover {
   background-color: #BADA55;
   color: #000;
+}
+
+.dropdown {
+  margin: 10px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dropdown-header {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fafafa57;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.toggle-button {
+  font-size: 30px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 15px;
+  background-color: #fafafa57;
 }
