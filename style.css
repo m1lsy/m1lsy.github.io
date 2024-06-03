@@ -532,4 +532,46 @@ b {
   display: none;
   padding: 15px;
   background-color: #fafafa57;
+
+}/*8ball*/
+.magic-8-ball-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.magic-8-ball {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: #000;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.number {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.answer {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px; 
+}
+
