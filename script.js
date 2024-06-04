@@ -1,38 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Magic 8 Ball functionality
-    const answers = [
-        "It is certain",
-        "It is decidedly so",
-        "Without a doubt",
-        "Yes, definitely",
-        "You may rely on it",
-        "As I see it, yes",
-        "Most likely",
-        "Outlook good",
-        "Yes",
-        "Signs point to yes",
-        "Reply hazy, try again",
-        "Ask again later",
-        "Better not tell you now",
-        "Cannot predict now",
-        "Concentrate and ask again",
-        "Don't count on it",
-        "My reply is no",
-        "My sources say no",
-        "Outlook not so good",
-        "Very doubtful"
-    ];
-
-    const magic8ball = document.getElementById('magic8ball');
-    const answerElement = document.getElementById('answer');
-
-    magic8ball.addEventListener('click', function () {
-        const randomIndex = Math.floor(Math.random() * answers.length);
-        const randomAnswer = answers[randomIndex];
-        answerElement.textContent = randomAnswer;
-    });
-
-    // Carousel functionality
     function initializeCarousel(carouselContainer, prevButton, nextButton) {
         let currentIndex = 0;
         const carousel = carouselContainer.querySelector('.carousel');
@@ -58,22 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCarousel();
     }
 
-    const firstCarouselContainer = document.querySelector('.first-carousel');
-    const firstPrevButton = document.querySelector('.first-prev');
-    const firstNextButton = document.querySelector('.first-next');
-
-    const secondCarouselContainer = document.querySelector('.second-carousel');
-    const secondPrevButton = document.querySelector('.second-prev');
-    const secondNextButton = document.querySelector('.second-next');
-
-    const thirdCarouselContainer = document.querySelector('.third-carousel');
-    const thirdPrevButton = document.querySelector('.third-prev');
-    const thirdNextButton = document.querySelector('.third-next');
-
-    // Initialize all carousels
-    initializeCarousel(firstCarouselContainer, firstPrevButton, firstNextButton);
-    initializeCarousel(secondCarouselContainer, secondPrevButton, secondNextButton);
-    initializeCarousel(thirdCarouselContainer, thirdPrevButton, thirdNextButton);
+    // Carousel initialization code...
 
     const requirementBoxes = document.querySelectorAll('.dropdown');
 
@@ -89,27 +40,75 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Slideshow code...
     let currentIndex = 0;
     const slides = document.querySelectorAll('.slideshow-images img');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
 
     function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === index ? "block" : "none";
+        slides.forEach(slide => {
+            slide.style.display = 'none';
         });
+        slides[index].style.display = 'block';
     }
 
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    function changeSlide(n) {
+        currentIndex += n;
+        if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        } else if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        }
         showSlide(currentIndex);
-    });
+    }
 
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    });
+    function autoSlide() {
+        changeSlide(1); // Move to the next slide
+    }
 
-    // Initialize slideshow position
+    // Show the first slide initially
     showSlide(currentIndex);
+
+    // Attach event listeners to the prev and next buttons
+    prevButton.addEventListener('click', function () {
+        changeSlide(-1); // Move to the previous slide
+    });
+
+    nextButton.addEventListener('click', function () {
+        changeSlide(1); // Move to the next slide
+    });
+
+    // Set up automatic slideshow
+    const intervalId = setInterval(autoSlide, 3000); // Change slide every 3 seconds
+
+    // Pause slideshow when hovering over the slideshow container
+    const slideshowContainer = document.querySelector('.slideshow-container');
+    slideshowContainer.addEventListener('mouseenter', function () {
+        clearInterval(intervalId); // Pause slideshow
+    });
+
+    // Resume slideshow when mouse leaves the slideshow container
+    slideshowContainer.addEventListener('mouseleave', function () {
+        intervalId = setInterval(autoSlide, 3000); // Resume slideshow
+    });
+
+    // Magic 8 Ball code wrapped inside an IIFE
+    (function () {
+        const magic8ball = document.getElementById('magic8ball');
+        const answerDisplay = document.getElementById('answer');
+        const responses = [
+            "Yes",
+            "No",
+            "Maybe",
+            "Try again later",
+            "Certainly",
+            "Absolutely not"
+        ];
+
+        magic8ball.addEventListener('click', function () {
+            const randomIndex = Math.floor(Math.random() * responses.length);
+            answerDisplay.textContent = responses[randomIndex];
+        });
+    })();
 });
