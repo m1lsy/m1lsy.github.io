@@ -533,7 +533,12 @@ b {
   padding: 15px;
   background-color: #fafafa57;
 
-}/*8ball*/
+}
+.dropdown-content p {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+/*8ball*/
 .magic-8-ball-container {
   display: flex;
   justify-content: center;
@@ -554,7 +559,12 @@ b {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+}
+
+.magic-8-ball-link img {
+  text-align: center;
+  max-width: 40%;
 }
 
 .number {

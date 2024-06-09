@@ -1,3 +1,4 @@
+//carousel
 document.addEventListener('DOMContentLoaded', function () {
     function initializeCarousel(carouselContainer, prevButton, nextButton) {
         let currentIndex = 0;
@@ -6,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const totalItems = items.length;
 
         function updateCarousel() {
-            const offset = -currentIndex * 100; // Adjust percentage as needed
+            const offset = -currentIndex * 100; 
             carousel.style.transform = `translateX(${offset}%)`;
         }
 
@@ -20,12 +21,28 @@ document.addEventListener('DOMContentLoaded', function () {
             updateCarousel();
         });
 
-        // Initialize carousel position
+        // initialize carousel position
         updateCarousel();
     }
 
-    // Carousel initialization code...
+    const firstCarouselContainer = document.querySelector('.first-carousel');
+    const firstPrevButton = document.querySelector('.first-prev');
+    const firstNextButton = document.querySelector('.first-next');
 
+    const secondCarouselContainer = document.querySelector('.second-carousel');
+    const secondPrevButton = document.querySelector('.second-prev');
+    const secondNextButton = document.querySelector('.second-next');
+
+    const thirdCarouselContainer = document.querySelector('.third-carousel');
+    const thirdPrevButton = document.querySelector('.third-prev');
+    const thirdNextButton = document.querySelector('.third-next');
+
+    // initialize both carousels
+    initializeCarousel(firstCarouselContainer, firstPrevButton, firstNextButton);
+    initializeCarousel(secondCarouselContainer, secondPrevButton, secondNextButton);
+    initializeCarousel(thirdCarouselContainer, thirdPrevButton, thirdNextButton);
+
+    //dropdown
     const requirementBoxes = document.querySelectorAll('.dropdown');
 
     requirementBoxes.forEach(box => {
@@ -39,8 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleButton.textContent = isVisible ? "+" : "-";
         });
     });
-
-    // Slideshow code...
+});
+//slideshow
+document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.slideshow-images img');
     const prevButton = document.querySelector('.prev');
@@ -64,51 +82,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function autoSlide() {
-        changeSlide(1); // Move to the next slide
+        changeSlide(1); 
     }
 
-    // Show the first slide initially
     showSlide(currentIndex);
 
-    // Attach event listeners to the prev and next buttons
     prevButton.addEventListener('click', function () {
-        changeSlide(-1); // Move to the previous slide
+        changeSlide(-1); 
     });
 
     nextButton.addEventListener('click', function () {
-        changeSlide(1); // Move to the next slide
+        changeSlide(1); 
     });
 
-    // Set up automatic slideshow
-    const intervalId = setInterval(autoSlide, 3000); // Change slide every 3 seconds
+    // automatic slideshow
+    const intervalId = setInterval(autoSlide, 3000); 
 
-    // Pause slideshow when hovering over the slideshow container
     const slideshowContainer = document.querySelector('.slideshow-container');
     slideshowContainer.addEventListener('mouseenter', function () {
-        clearInterval(intervalId); // Pause slideshow
+        clearInterval(intervalId); 
     });
 
-    // Resume slideshow when mouse leaves the slideshow container
+    // Resume slideshow when mouse leaves slideshow container
     slideshowContainer.addEventListener('mouseleave', function () {
-        intervalId = setInterval(autoSlide, 3000); // Resume slideshow
+        intervalId = setInterval(autoSlide, 3000); 
     });
-
-    // Magic 8 Ball code wrapped inside an IIFE
-    (function () {
-        const magic8ball = document.getElementById('magic8ball');
-        const answerDisplay = document.getElementById('answer');
-        const responses = [
-            "Yes",
-            "No",
-            "Maybe",
-            "Try again later",
-            "Certainly",
-            "Absolutely not"
-        ];
-
-        magic8ball.addEventListener('click', function () {
-            const randomIndex = Math.floor(Math.random() * responses.length);
-            answerDisplay.textContent = responses[randomIndex];
-        });
-    })();
 });
