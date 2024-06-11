@@ -561,10 +561,18 @@ b {
   cursor: pointer;
   box-shadow: 0 0 50px rgb(255, 255, 255);
 }
+.magic-8-ball-link {
+  display: flex;
+  justify-content: center;
+}
+
+.magic-8-ball-link a {
+  max-width: 40%;
+}
+
 
 .magic-8-ball-link img {
-  text-align: center;
-  max-width: 40%;
+  max-width: 100%;
 }
 
 .number {
