@@ -65,23 +65,27 @@
             <li>CREATING DROP-DOWN SECTIONS: I implemented interactive drop-down sections to provide additional information about admission requirements.</li>
             <li>DEVELOPING A CONTACT FORM: I designed and coded a functional contact form to facilitate communication between prospective students and the institution.</li>
             <li>BUILDING THE REST OF THE PAGE: Using HTML and CSS to bring the design to life</li>
-            <p>To create the drop-down information sections, I used JavaScript. Here’s a snippet of the code I wrote:</p>
+            <p>To create the drop-down information sections, I used JavaScript. Here’s a snippet of the code I wrote and an explanation of how I did it:</p>
             <section class="image-container">
                 <figure>
                         <img src="DevSSpro3.png">
                         <figcaption>FIGURE A</figcaption>
                 </figure>
             </section>
-            <p>EXPLANATION:</p>
             <ul>
-                <li>DOMContentLoaded Event:<br>Ensures the script runs only after the DOM is fully loaded, preventing errors related to unavailable elements.</li>
+                <li>DOM-CONTENTLOADED EVENT:
+                    <br> - Ensures the script runs only after the DOM is fully loaded, preventing errors related to unavailable elements.</li>
                 <br>
-                <li>Selecting Elements:<br>Uses document.querySelectorAll to target all .requirement-box elements, allowing the script to handle multiple drop-down sections.</li>
+                <li>SELECTING ELEMENTS:
+                    <br> - Uses document.querySelectorAll to target all .requirement-box elements, allowing the script to handle multiple drop-down sections.</li>
                 <br>
-                <li>Looping through Each Box:<br>The forEach method is used to iterate through each .requirement-box element, selecting the relevant .header, .content, and .toggle-button elements within each box.</li>
+                <li>LOOPING THROUGH EACH BOX:
+                    <br> - The forEach method is used to iterate through each .requirement-box element, selecting the relevant .header, .content, and .toggle-button elements within each box.</li>
                 <br>
-                <li>Adding Click Event Listener:<br>Attaches a click event listener to the header of each box. When clicked, it toggles the visibility of the content and updates the toggle button's text accordingly.</li>
-                <p>This approach provides a simple and effective way to create expandable and collapsible sections on a webpage, enhancing the user experience by allowing users to control the visibility of additional information.</p>
+                <li>ADDING CLICK EVENT LISTENER:
+                    <br> - Attaches a click event listener to the header of each box. When clicked, it toggles the visibility of the content and updates the toggle button's text accordingly.
+                    <br> - This approach provides a simple and effective way to create expandable and collapsible sections on a webpage, enhancing the user experience by allowing users to control the visibility of additional information.
+                </li>
             </ul>
         </ul>
         <section class="LO-box">
@@ -90,9 +94,107 @@
                     <h2>GIT REPOSITORY FOR 3RD PROJECT &#8599</h2>
                 </div>
             </a>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CAFo0aVPq4I?si=MpuxHpuV8cMJI67Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border-radius: 20px;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CAFo0aVPq4I?si=MpuxHpuV8cMJI67Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border-radius: 20px; margin-right: 50px;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a href="https://i530133.hera.fontysict.net/group-3-fontys-website_homepage/templates/index.html" class="box-link" target="_blank">
+                <div class="box">
+                    <h2>WEBSITE LINK &#8599</h2>
+                </div>
+            </a>
         </section>
         <br>
+        <h2>SPRINT X - TO-DO LIST APPLICATION</h2>
+        <p>
+            I had some difficulty deciding what to choose for my final Sprint X project as we were 
+            able to choose anything. Initially I wanted to choose something that involved mainly 
+            branding and design, however after discussing with teachers and giving it some thought, 
+            I decided to challenge myself and focus more on JavaScript. I thought about doing an 
+            Interactive Quiz Game, a weather application and many other things, but ultimately, I 
+            decided to go with an interactive to-do list application which was suggested to me by Metaxas. 
+        </p>
+        <h3>What I did</h3>
+        <p>
+            I started my process with conducting some Library and Field Research. My full research 
+            report and more information about this can be found in Learning Outcome 4. I then began 
+            my design process which involved creating wireframes, low fidelity prototypes and high 
+            fidelity prototypes which can be seen In Learning Outcome 3. I then conducted some user 
+            testing with these prototypes in order to identify possible problems in my design with 
+            real users who fit the target audience. More information about this can be found in 
+            Learning Outcome 1.
+        </p>
+        <p>
+            When the time for development came for my To-Do List application, I encountered a lot 
+            of issues and difficulties. I started off by replicating my prototype by using HTML and 
+            CSS. This part went well as I am becoming more skilled in both languages. In the 
+            screenshot below you can see a snippet of CSS code which I used to create one of the 
+            layouts.
+        </p>
+        <p>
+            However, things turned south when I began to implement the functionality. JavaScipt is 
+            still very new to me and so this project was a challenge from the beginning. I managed 
+            to implement a local storage system API for the list layout which stored the tasks, 
+            however I was battling to get these tasks to store in the other layouts too. I tried to 
+            look up ways to do this and I tried to get help from ChatGPT but I still was not successful. 
+        </p>
+        <h3>What I Learned</h3>
+        <p>
+            I then decided to restart my process, this time I learnt to rather start with the basic 
+            functionality and to ensure everything was functioning correctly before I started with 
+            the styling. Below you can see some snippets of my JavaScript code and an in-depth 
+            explanation as to how it was working. This in-depth explanation explains what I do to 
+            show that I understand the concepts, but it also serves as a helpful guide for me to 
+            understand what I am doing. 
+        </p>
+        <div class="image-container">
+            <img src="TODOLISTSS1.png" style="max-width: 40%;">
+            <img src="TODOLISTSS2.png" style="max-width: 40%;">
+        </div>
+        <ul>
+            <li>LOCAL STORAGE:
+                <br> - I use localStorage to save data across page reloads. If tasks are stored, I retrieve them and convert them back to an array using JSON.parse().
+                <br> - When tasks are added or deleted, I update localStorage by converting the tasks array to a JSON string with JSON.stringify().
+            </li>
+            <br>
+            <li>EVENT-HANDLING:
+                <br> - I use addEventListener() to attach event listeners to buttons. For example, the "Add Task" button (addTaskSubmit) listens for clicks, stops the default form submission with e.preventDefault(), and adds a task to the tasks array.
+                <br> - Layout buttons (listLayoutBtn, calendarLayoutBtn, boardLayoutBtn) change the layout and trigger the renderTasks() function to display tasks in the selected layout
+            </li>
+            <br>
+            <li>DOM MANIPULATION:
+                <br> - I create and manipulate HTML elements using document.createElement(), appendChild(), and setting properties like textContent.
+                <br> - Conditional rendering is done by changing the inner HTML of containers (task-list, calendar-container, board-container) based on the current layout.
+            </li>
+            <br>
+            <li>MODULAR FUNCTIONS:
+                <br> - The renderTasks() function handles rendering for different layouts (list, calendar, board). It clears existing content and appends tasks based on the current layout.
+            </li>
+            <br>
+            <li>CLASS MANIPULATION:
+                <br> - I use classList.add() and classList.remove() to show or hide elements, such as the add task modal or switching layouts.
+            </li>
+            <br>
+            <li>TEMPLATE LITERALS:
+                <br> - Template literals (${}) make creating dynamic strings easier, especially when including variables.
+            </li>
+            <br>
+            <li>CONTROL STRUCTURES:
+                <br> - if statements control the logic for displaying layouts and handling conditional operations, like checking if a task name and date are provided before adding a task.
+            </li>
+            <br>
+            <li>ARRAYS & ARRAY METHODS:
+                <br> - The tasks array stores task objects with a name and date.
+                <br> - Methods like push() add new tasks, and splice() remove tasks. The forEach() method iterates over the tasks array for rendering tasks.
+            </li>
+        </ul>
+        <h3>Reflection</h3>
+        <p>I learned many things during the development process of Sprint X. Firstly, I learnt that I 
+            should always begin my development with perfecting the basic functionality of whatever I am 
+            making, and then move onto the styling. This helps as the primary goal of any application is 
+            to solve a problem or fulfil a need. By focusing on functionality first, you ensure that the 
+            core features meet the requirements and provide value to the users. Developing the functionality 
+            first also allows you to iterate and make changes more easily. If the core features need 
+            adjustments, it’s simpler to do so without having to redo the styling each time. I also learnt 
+            some valuable JavaScript skills, particularly how to effectively manage data and enhance user 
+            interaction. I go into detail about each element in the section above. </p>
         <h2>Brief reflection on past Portfolio</h2>
         <p>
             In regards to Development, this semester I have focused on improving my skills in HTML, CSS and JavaScript. Coding is something which I actually really enjoy and often find exciting, however I tend to make a lot of mistakes and I often struggle to grasp concepts as fast as I would like to, which can leave me feeling less motivated and discouraged.

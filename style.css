@@ -267,6 +267,7 @@ nav a:hover {
 .image-container img{
   max-width: 60%;
   border-radius: 20px;
+  padding: 10px;
 }
 
 figure {
@@ -352,8 +353,7 @@ figure {
   text-align: center;
 }
 ul {
-  list-style-type: circle;
-}
+  list-style-type: disc;}
 
 .code-ss img {
   max-width: 50%;
