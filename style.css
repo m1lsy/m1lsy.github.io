@@ -228,7 +228,17 @@ nav a:hover {
   display: flex;
   flex-direction: row;
 }
+.survey-container {
+  display: flex;
+  justify-content: center;
+}
 
+.survey-container img{
+  max-width: 45%;
+  border-radius: 30px;
+  padding: 20px;
+  
+}
 
 .survey-heading {
   display: inline-block;
