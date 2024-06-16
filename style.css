@@ -17,6 +17,10 @@ body {
 
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
+a:visited {
+  color: inherit; 
+}
+
 p {
   text-align: justify;
   margin: 50px;

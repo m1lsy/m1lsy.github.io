@@ -37,10 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const thirdPrevButton = document.querySelector('.third-prev');
     const thirdNextButton = document.querySelector('.third-next');
 
+    const fourthCarouselContainer = document.querySelector('.fourth-carousel');
+    const fourthPrevButton = document.querySelector('.fourth-prev');
+    const fourthNextButton = document.querySelector('.fourth-next');
+
     // initialize both carousels
     initializeCarousel(firstCarouselContainer, firstPrevButton, firstNextButton);
     initializeCarousel(secondCarouselContainer, secondPrevButton, secondNextButton);
     initializeCarousel(thirdCarouselContainer, thirdPrevButton, thirdNextButton);
+    initializeCarousel(fourthCarouselContainer, fourthPrevButton, fourthNextButton);
 
     //dropdown
     const requirementBoxes = document.querySelectorAll('.dropdown');
