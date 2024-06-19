@@ -21,12 +21,14 @@ strong {
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 a:visited {
-  color: inherit; 
+  color: black; 
 }
-
+a {
+  color: #000;
+}
 p {
   text-align: justify;
-  margin: 50px;
+  margin: 60px;
 }
 
 h1 {
