@@ -5,6 +5,9 @@ body {
   padding: 0;
   background-color: #FAFAFA
 }
+strong {
+  font-weight: 550;
+}
 #learning-background {
   background-color: #BADA55;
 }
@@ -242,6 +245,11 @@ nav a:hover {
   border-radius: 30px;
   padding: 20px;
   
+}
+
+.nails-container img{
+  display: block;
+  padding: 10px;
 }
 
 .survey-heading {

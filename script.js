@@ -1,5 +1,5 @@
-//carousel
 document.addEventListener('DOMContentLoaded', function () {
+    // Carousel Initialization Function
     function initializeCarousel(carouselContainer, prevButton, nextButton) {
         let currentIndex = 0;
         const carousel = carouselContainer.querySelector('.carousel');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const totalItems = items.length;
 
         function updateCarousel() {
-            const offset = -currentIndex * 100; 
+            const offset = -currentIndex * 100;
             carousel.style.transform = `translateX(${offset}%)`;
         }
 
@@ -25,29 +25,24 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCarousel();
     }
 
-    const firstCarouselContainer = document.querySelector('.first-carousel');
-    const firstPrevButton = document.querySelector('.first-prev');
-    const firstNextButton = document.querySelector('.first-next');
+    // Initialize all carousels
+    const carousels = [
+        {container: '.first-carousel', prev: '.first-prev', next: '.first-next'},
+        {container: '.second-carousel', prev: '.second-prev', next: '.second-next'},
+        {container: '.third-carousel', prev: '.third-prev', next: '.third-next'},
+        {container: '.fourth-carousel', prev: '.fourth-prev', next: '.fourth-next'}
+    ];
 
-    const secondCarouselContainer = document.querySelector('.second-carousel');
-    const secondPrevButton = document.querySelector('.second-prev');
-    const secondNextButton = document.querySelector('.second-next');
+    carousels.forEach(c => {
+        const container = document.querySelector(c.container);
+        const prevButton = document.querySelector(c.prev);
+        const nextButton = document.querySelector(c.next);
+        if (container && prevButton && nextButton) {
+            initializeCarousel(container, prevButton, nextButton);
+        }
+    });
 
-    const thirdCarouselContainer = document.querySelector('.third-carousel');
-    const thirdPrevButton = document.querySelector('.third-prev');
-    const thirdNextButton = document.querySelector('.third-next');
-
-    const fourthCarouselContainer = document.querySelector('.fourth-carousel');
-    const fourthPrevButton = document.querySelector('.fourth-prev');
-    const fourthNextButton = document.querySelector('.fourth-next');
-
-    // initialize both carousels
-    initializeCarousel(firstCarouselContainer, firstPrevButton, firstNextButton);
-    initializeCarousel(secondCarouselContainer, secondPrevButton, secondNextButton);
-    initializeCarousel(thirdCarouselContainer, thirdPrevButton, thirdNextButton);
-    initializeCarousel(fourthCarouselContainer, fourthPrevButton, fourthNextButton);
-
-    //dropdown
+    // Dropdown Functionality
     const requirementBoxes = document.querySelectorAll('.dropdown');
 
     requirementBoxes.forEach(box => {
@@ -55,15 +50,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const content = box.querySelector('.dropdown-content');
         const toggleButton = header.querySelector('.toggle-button');
 
+        // Ensure content is initially hidden
+        content.style.display = "none";
+
         header.addEventListener('click', function () {
             const isVisible = content.style.display === "block";
             content.style.display = isVisible ? "none" : "block";
             toggleButton.textContent = isVisible ? "+" : "-";
         });
     });
-});
-//slideshow
-document.addEventListener('DOMContentLoaded', function () {
+
+    // Slideshow Functionality
     let currentIndex = 0;
     const slides = document.querySelectorAll('.slideshow-images img');
     const prevButton = document.querySelector('.prev');
@@ -87,29 +84,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function autoSlide() {
-        changeSlide(1); 
+        changeSlide(1);
     }
 
     showSlide(currentIndex);
 
     prevButton.addEventListener('click', function () {
-        changeSlide(-1); 
+        changeSlide(-1);
     });
 
     nextButton.addEventListener('click', function () {
-        changeSlide(1); 
+        changeSlide(1);
     });
 
-    // automatic slideshow
-    const intervalId = setInterval(autoSlide, 3000); 
+    // Automatic slideshow
+    let intervalId = setInterval(autoSlide, 3000);
 
     const slideshowContainer = document.querySelector('.slideshow-container');
     slideshowContainer.addEventListener('mouseenter', function () {
-        clearInterval(intervalId); 
+        clearInterval(intervalId);
     });
 
     // Resume slideshow when mouse leaves slideshow container
     slideshowContainer.addEventListener('mouseleave', function () {
-        intervalId = setInterval(autoSlide, 3000); 
+        intervalId = setInterval(autoSlide, 3000);
     });
 });
